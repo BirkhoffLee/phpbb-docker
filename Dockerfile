@@ -17,8 +17,8 @@ RUN docker-php-source extract \
     && rm -rf phpbb.zip phpBB3 \ 
     && chown -R www-data:www-data /var/www/html \
     && chmod 755 -R /var/www/html \
-    && chmod 660 phpBB3/images/avatars/upload/ phpBB3/config.php \
-    && chmod 770 phpBB3/store/ phpBB3/cache/ phpBB3/files/ \
+    && chmod 660 /var/www/html/images/avatars/upload/ /var/www/html/config.php \
+    && chmod 770 /var/www/html/store/ /var/www/html/cache/ /var/www/html/files/ \
     && apt-get clean \ 
     && apt-get autoclean \ 
     && apt-get autoremove --purge -y \ 
