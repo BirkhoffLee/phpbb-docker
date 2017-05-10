@@ -41,7 +41,7 @@ $ docker build -t phpBB .
 Next, run the image we just built.
 
 ```
-$ docker run -d -p 80:80 -v $(pwd)/settings.php:/var/www/html/inc/settings.php:ro --name phpBB phpBB
+$ docker run -d -p 80:80 --name phpBB phpBB
 ```
 
 That's it!
