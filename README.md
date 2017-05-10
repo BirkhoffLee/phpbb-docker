@@ -1,4 +1,4 @@
-# phpBB-php-docker
+# phpBB-docker [![](https://images.microbadger.com/badges/image/birkhofflee/phpbb-docker.svg)](https://microbadger.com/images/birkhofflee/phpbb-docker)
 A Docker image for running a phpBB site, very light-weight and well-optimized.
 
 # Deployment
