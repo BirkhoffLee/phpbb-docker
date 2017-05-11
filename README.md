@@ -38,10 +38,11 @@ Next, build the image.
 $ docker build -t phpBB .
 ```
 
-Next, run the image we just built.
+Next, run the image we just built and a MySQL container as well.
 
 ```
-$ docker run -d -p 80:80 --name phpBB phpBB
+$ docker run -d -e "MYSQL_ROOT_PASSWORD=phpbb" -e "MYSQL_USER=phpbb" -e "MYSQL_PASSWORD=phpbb" -e "MYSQL_DATABASE=phpbb" --name phpbb_db mysql
+$ docker run -d -p 80:80 --link phpbb_db --name phpbb phpbb
 ```
 
 That's it!
