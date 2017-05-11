@@ -46,3 +46,16 @@ $ docker run -d -p 80:80 --link phpbb_db --name phpbb phpbb
 ```
 
 That's it!
+
+# phpBB Installation
+After deploying the containers, open the corresponding url in your web browser to get started with phpBB.
+
+Follow the install wizard. When the database configuration page shows up, fill `phpbb_db` into the database address field.
+
+For the rest information, please fill the following details into the corresponding fields on the page, if you used the default database configuration during deployment:
+
+> Database Username: `phpbb`
+  Database Password: `phpbb`
+  Database Name: `phpbb`
+
+Follow the rest of the installation, and you should be done.
