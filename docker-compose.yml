@@ -1,4 +1,13 @@
 phpbb:
   build: .
+  links:
+    - phpbb_db
   ports:
     - "80:80"
+phpbb_db:
+  image: phpbb
+  environment:
+    MYSQL_ROOT_PASSWORD: phpbb
+    MYSQL_USER: phpbb
+    MYSQL_PASSWORD: phpbb
+    MYSQL_DATABASE: phpbb
